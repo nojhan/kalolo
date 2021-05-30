@@ -27,3 +27,8 @@ Dependencies
 
 Some faces depends on additional highlight keywords: `flow` and `state`.
 
+Screeshots
+==========
+
+![Screeshot in insert mode](https://raw.githubusercontent.com/nojhan/kalolo/main/screen_insert.png)
+![Screenshot in normal mode](https://raw.githubusercontent.com/nojhan/kalolo/main/screen_normal.png)
