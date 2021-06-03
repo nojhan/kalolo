@@ -3,7 +3,7 @@ Kalolo is a dark 256-colors scheme for the [kakoune](https://kakoune.org/) edito
 Features
 ========
 
-- Selections are in shades of yellows in normal mode and blues in insert mode.
+- Selections and status line are in shades of yellows in normal mode and of blues in insert mode.
 - Selections let the syntax coloring appear ("alpha blending").
 - Primary selection, secondary selection, primary cursor, secondary cursor and
   end-of-line cursors all have different colors.
@@ -25,7 +25,7 @@ Features
 Dependencies
 ============
 
-Some faces depends on additional highlight keywords: `flow` and `state`.
+Some faces depends on additional highlight keywords: `flow`, `state` and `Search`.
 
 Screeshots
 ==========

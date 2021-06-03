@@ -126,21 +126,14 @@ set-face global LineNumbersWrapped "%opt(kalolo_dark_black)"
 set-face global MenuForeground     "%opt{kalolo_light_white},%opt{kalolo_dark_yellow}+b"
 set-face global MenuBackground     "%opt{kalolo_light_white},%opt{kalolo_dark_blue}"
 set-face global MenuInfo           "%opt{kalolo_light_white},%opt{kalolo_blue}+i"
-set-face global Information        "%opt{kalolo_white},%opt{kalolo_light_black}"
 set-face global Error              "%opt{kalolo_light_yellow},%opt{kalolo_red}"
-set-face global StatusLine         "%opt{kalolo_dark_black},%opt{kalolo_dark_blue}+b"
-set-face global StatusLineMode     "%opt{kalolo_light_white},%opt{kalolo_dark_yellow}+b"
-set-face global StatusLineInfo     "%opt{kalolo_light_white},%opt{kalolo_black}"
-set-face global StatusLineValue    "%opt{kalolo_black},%opt{kalolo_dark_yellow}"
-set-face global StatusCursor       "%opt{kalolo_light_white},%opt{kalolo_yellow}"
-set-face global Prompt             "%opt{kalolo_dark_black},%opt{kalolo_dark_blue}+b"
 
 # Additional UI
 # Like a temporary comment: light green.
 set-face global Search             "%opt{kalolo_black},%opt{kalolo_light_green}+i"
 
+##### Default normal #####
 # Cursors varying with mode
-# Default normal
 set-face global PrimarySelection   "default,rgba:cf820075"
 set-face global PrimaryCursor      "%opt{kalolo_black},%opt{kalolo_light_yellow}+F"
 set-face global PrimaryCursorEol   "default,%opt{kalolo_light_red}+F"
@@ -148,6 +141,15 @@ set-face global PrimaryCursorEol   "default,%opt{kalolo_light_red}+F"
 set-face global SecondarySelection "default,rgba:cf820045"
 set-face global SecondaryCursor    "%opt{kalolo_white},%opt{kalolo_dark_yellow}+F"
 set-face global SecondaryCursorEol "default,%opt{kalolo_dark_red}+F"
+
+# mode-dependent UI
+set-face global StatusLine         "%opt{kalolo_dark_black},%opt{kalolo_yellow}"
+set-face global StatusLineMode     "%opt{kalolo_light_white},%opt{kalolo_dark_black}"
+set-face global StatusLineInfo     "%opt{kalolo_light_white},%opt{kalolo_dark_blue}+b"
+set-face global StatusLineValue    "%opt{kalolo_black},%opt{kalolo_dark_blue}"
+set-face global StatusCursor       "%opt{kalolo_light_white},%opt{kalolo_light_yellow}"
+set-face global Prompt             "%opt{kalolo_light_white},%opt{kalolo_dark_black}+b"
+set-face global Information        "%opt{kalolo_light_white},%opt{kalolo_dark_blue}+b"
 
 # Switching to normal = shades of yellows
 hook global ModeChange '.*:normal' %{
@@ -158,6 +160,14 @@ hook global ModeChange '.*:normal' %{
     set-face global SecondarySelection "default,rgba:cf820045"
     set-face global SecondaryCursor    "%opt{kalolo_white},%opt{kalolo_dark_yellow}+F"
     set-face global SecondaryCursorEol "default,%opt{kalolo_dark_red}+F"
+
+    set-face global StatusLine         "%opt{kalolo_dark_black},%opt{kalolo_yellow}"
+    set-face global StatusLineMode     "%opt{kalolo_light_white},%opt{kalolo_dark_black}"
+    set-face global StatusLineInfo     "%opt{kalolo_light_white},%opt{kalolo_dark_blue}+b"
+    set-face global StatusLineValue    "%opt{kalolo_black},%opt{kalolo_dark_black}"
+    set-face global StatusCursor       "%opt{kalolo_light_white},%opt{kalolo_light_yellow}"
+    set-face global Prompt             "%opt{kalolo_light_white},%opt{kalolo_dark_black}+b"
+    set-face global Information        "%opt{kalolo_light_white},%opt{kalolo_dark_blue}+b"
 }
 
 # Switching to insert = shades of blue
@@ -169,5 +179,12 @@ hook global ModeChange '.*:insert' %{
     set-face global SecondarySelection "default,rgba:6f9dfe45"
     set-face global SecondaryCursor    "%opt{kalolo_light_white},%opt{kalolo_dark_blue}+F"
     set-face global SecondaryCursorEol "default,%opt{kalolo_magenta}+F"
-}
 
+    set-face global StatusLine         "%opt{kalolo_dark_black},%opt{kalolo_dark_blue}"
+    set-face global StatusLineMode     "%opt{kalolo_light_white},%opt{kalolo_dark_black}"
+    set-face global StatusLineInfo     "%opt{kalolo_light_white},%opt{kalolo_dark_yellow}+b"
+    set-face global StatusLineValue    "%opt{kalolo_black},%opt{kalolo_dark_blue}"
+    set-face global StatusCursor       "%opt{kalolo_light_white},%opt{kalolo_light_blue}"
+    set-face global Prompt             "%opt{kalolo_dark_black},%opt{kalolo_dark_black}+b"
+    set-face global Information        "%opt{kalolo_light_white},%opt{kalolo_dark_yellow}+b"
+}
