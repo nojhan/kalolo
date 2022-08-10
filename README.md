@@ -1,4 +1,4 @@
-Kalolo is a dark 256-colors scheme for the [kakoune](https://kakoune.org/) editor, designed with consistency in mind.
+Kalolo is a dark 256-colors scheme for the [kakoune](https://kakoune.org/) editor, designed with usability and consistency in mind.
 
 
 Features
@@ -43,13 +43,13 @@ Screenshots
 Rationale
 =========
 
-Color schemes are often perceived as a matter af taste.
+Color schemes are often perceived as a matter of taste.
 While this is true in essence, there are still some usability guidelines that may be followed.
-Most of color schemes for text editors show some of the following antipatterns:
+Most of color schemes for text editors show some of the following anti-patterns:
 
 - themes with too few colors (e.g. the default theme for Eclipse),
 - fancy rainbows which tries to pack so many colors on each lines that it becomes difficult to parse the text visually (e.g. the "one" theme for Atom),
-- use of colors without semantic consistency,
+- use of colors without semantic consistency (e.g. some control-flow keywords are red, some are blue),
 - a lack of understanding of what information are important (e.g. making comments less visible),
 - no visual clue on the current status of the (modal) editor (e.g. grey status bar, single-color cursors).
 
