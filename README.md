@@ -1,4 +1,14 @@
-Kalolo is a dark 256-colors scheme for the [kakoune](https://kakoune.org/) editor, designed with usability and consistency in mind.
+# THIS REPOSITORY HAS MOVED
+
+It is now available at: https://nojhan.net/git/nojhan/kalolo
+
+You can federate with it from Codeberg or another Forgejo instance.
+
+Please consider self-hosting to preserve the open Web, I highly recommend: https://yunohost.org
+
+
+
+## Kalolo is a dark 256-colors scheme for the [kakoune](https://kakoune.org/) editor, designed with usability and consistency in mind.
 
 
 Features
